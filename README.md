@@ -1,5 +1,7 @@
 # Producer / Consumer example
 
+I wanted to experiment with Kafka and Scala - two technologies I have not had a chance
+to play with yet! :) 
 
 ## Producer
 - Simulates some log data representing riders, their location and the start / end time of journeys
@@ -55,4 +57,34 @@ cd ./producer
 virtualenv venv 
 pip install requirements.txt
 python producer.py
+```
+
+### Consumer
+Picks up messagse from kafka and outputs the total average rider time.
+
+Note - I had to run this in a seperate vscode workspace to get scala to work with sbt.
+e.g. open /streaming_producer_consumer/consumer in a seperate vscode window and metals should work correctly.
+
+#### Useful Scala references:
+- https://shunsvineyard.info/2020/11/20/setting-up-vs-code-for-scala-development-on-wsl/
+- https://scalameta.org/metals/docs/editors/vscode/
+- https://www.udemy.com/course/taming-big-data-with-spark-streaming-hands-on/
+
+Example Launch configuration (.vscode/launch.json):
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "scala",
+            "name": "Debug ",
+            "request": "launch",
+            "mainClass": "com.gv.sparkstreaming.Consume",
+            "args": []
+        }
+    ]
+}
 ```

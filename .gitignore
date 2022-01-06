@@ -1,2 +1,6 @@
 .vscode
 venv
+project
+.bloop
+.metals
+target
