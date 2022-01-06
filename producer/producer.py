@@ -50,6 +50,7 @@ def push_end_times(producer: KafkaProducer, riders: List[Rider]) -> None:
 
         total_riders += 1
         total_time += extra_minutes
+        print(rider)
 
     push_to_kafka(producer, riders)
 
