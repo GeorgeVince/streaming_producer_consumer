@@ -46,7 +46,8 @@ docker-compose up - d
 - https://kafka.apache.org/quickstart
 - https://docs.confluent.io/platform/current/quickstart/ce-docker-quickstart.html
 - https://rmoff.net/2018/08/02/kafka-listeners-explained/
-
+- https://medium.com/@sdjemails/spark-structured-streaming-joins-bc7f065b2e7
+- https://github.com/sylvesterdj/LearningScala
 
 
 ### Running Producer
